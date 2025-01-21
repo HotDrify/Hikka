@@ -487,13 +487,11 @@ class Hikka:
                 f"hikka-{telegram_id}",
             )
         )
-        
-        client.session.set_dc(2, "149.154.167.40", 80)
 
         session.set_dc(
-            client.session.dc_id,
-            client.session.server_address,
-            client.session.port,
+            2,
+            "149.154.167.40",
+            80,
         )
 
         session.auth_key = client.session.auth_key
