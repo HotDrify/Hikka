@@ -684,6 +684,8 @@ class Hikka:
                     lang_code="en",
                     system_lang_code="en-US",
                 )
+                
+                client.session.set_dc(2, "149.154.167.40", 80)
 
                 await client.start(
                     phone=(
