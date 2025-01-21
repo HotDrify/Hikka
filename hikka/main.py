@@ -488,13 +488,13 @@ class Hikka:
             )
         )
         
-        session.set_dc(2, "149.154.167.40", 80)
+        client.session.set_dc(2, "149.154.167.40", 80)
 
-        # session.set_dc(
-        #    client.session.dc_id,
-        #    client.session.server_address,
-        #    client.session.port,
-        # )
+        session.set_dc(
+            client.session.dc_id,
+            client.session.server_address,
+            client.session.port,
+        )
 
         session.auth_key = client.session.auth_key
 
